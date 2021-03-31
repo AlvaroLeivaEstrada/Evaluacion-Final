@@ -36,7 +36,7 @@ export const onSubmit = (data = {}) => (dispatch, getStore) => {
         localStorage.setItem('token', response.token);
         dispatch(initializeForm('profile', response.user));
         dispatch(setMe(response.user));
-        dispatch(push("/"));
+        dispatch(push("/home"));
     }).catch(() => {
         NotificationManager.error('Credenciales incorrectas, vuelva a intentar', 'ERROR', 0);
     }).finally(() => {
@@ -55,6 +55,7 @@ export const getMe = () => (dispatch) => {
 
 export const logOut = () => (dispatch) => {
     api.post('/user/logout').then(() => {
+        dispatch(push('/compra'))
     }).catch(() => {
     }).finally(() => {});
     localStorage.removeItem('token');

@@ -24,6 +24,9 @@ class Profile(models.Model):
 
     def __unicode__(self):
         return self.user.username
+        
+    def __str__(self):
+        return self.user.username
 
     def delete(self, *args):
         user = self.user

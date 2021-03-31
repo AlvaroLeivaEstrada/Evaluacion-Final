@@ -30,37 +30,40 @@ class SideBar extends Component {
                 <div className="nav-wrapper">
                     <ul className="nav--no-borders flex-column nav">
                         <li className="nav-item">
-                            <NavLink to="/" exact className="nav-link " activeClassName={'active'}>
+                            <NavLink to="/home" exact className="nav-link " activeClassName={'active'}>
                                 <div className="d-inline-block item-icon-wrapper">
-                                    <i className="material-icons">edit</i>
+                                    <i className="material-icons">store</i>
                                 </div>
-                                <span>Home</span>
+                                <span>Tienda</span>
+                            </NavLink>
+                        </li>
+                      
+                        <li className="nav-item">
+                            <NavLink to="/listProducts" className="nav-link" activeClassName={'active'}>
+                                <div className="d-inline-block item-icon-wrapper">
+                                    <i className="material-icons">description</i>
+                                </div>
+                                <span>Mi catalogo de productos</span>
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/page2" className="nav-link" activeClassName={'active'}>
+                            <NavLink to="/reporte" className="nav-link" activeClassName={'active'}>
                                 <div className="d-inline-block item-icon-wrapper">
                                     <i className="material-icons">vertical_split</i>
                                 </div>
-                                <span>Basic components</span>
+                                <span>Reporte</span>
                             </NavLink>
                         </li>
+
                         <li className="nav-item">
-                            <NavLink to="/grids" className="nav-link" activeClassName={'active'}>
+                            <NavLink to="/myShopping" exact className="nav-link " activeClassName={'active'}>
                                 <div className="d-inline-block item-icon-wrapper">
-                                    <i className="material-icons">vertical_split</i>
+                                    <i className="material-icons">shop</i>
                                 </div>
-                                <span>Grids</span>
+                                <span >Mis compras</span>
                             </NavLink>
                         </li>
-                        <li className="nav-item">
-                            <NavLink to="/notifications" className="nav-link" activeClassName={'active'}>
-                                <div className="d-inline-block item-icon-wrapper">
-                                    <i className="material-icons">vertical_split</i>
-                                </div>
-                                <span>Notificaciones</span>
-                            </NavLink>
-                        </li>
+                    
                         <li className="nav-item">
                             <NavLink to="/tabs" className="nav-link" activeClassName={'active'}>
                                 <div className="d-inline-block item-icon-wrapper">

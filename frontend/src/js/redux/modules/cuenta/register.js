@@ -37,6 +37,7 @@ export const onSubmit = (data = {}) => (dispatch) => {
 
 export const logOut = () => (dispatch) => {
     localStorage.removeItem('token');
+    dispatch(push('/compra'))
 };
 
 

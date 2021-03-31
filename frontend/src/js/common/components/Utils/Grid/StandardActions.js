@@ -33,7 +33,7 @@ class Acciones extends Component {
         return (
             <div className="d-flex justify-content-center">
                 {(ver !== undefined) && (
-                    <Link to={`${ver}/${id}/`} className="px-2" ><i className="material-icons">remove_red_eye</i></Link>
+                    <Link to={`${ver}/${id}/`} className="px-2" ><i className="material-icons">add_shopping_cart</i></Link>
                 )}
                 {(editar !== undefined) && (
                     <Link className="text-warning" to={`${editar}/${id}/editar`} ><i className="material-icons">edit</i></Link>
